@@ -62,11 +62,11 @@ body{
 }
 
 .card {
-    max-width: 334px;
-    min-height: 330px;
+    max-width: 337px;
+    min-height: 362px;
     background-color: #212832;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     animation: loadCard ease-in-out 2.5s;
     transition: 1s;
 }
@@ -78,7 +78,7 @@ body{
     background-color: #252f39;
     place-items: center;
     border-radius: 50px;
-    margin: 5px 0 10px 0;
+    margin: 15px 0 10px 10px;
 }
 
 .start-block img {
@@ -86,7 +86,7 @@ body{
 }
 
 h1 {
-    margin: 15px 0 10px 0;
+    margin: 15px 0 10px 10px;
     font-size: 1.7rem;
     
 }
@@ -101,6 +101,7 @@ p {
 
 .text {
     font-size: 14px;
+    margin-left: 10px;
     margin-bottom: 25px;
     line-height: 20px;
 }
@@ -116,28 +117,31 @@ input.btn {
     height: 45px;
     border: none;
     border-radius: 25px;
-    margin: 0 5px 0 5px;
+    margin: 0 5.5px 0 5.5px;
     background-color: #272e38;
     color: #fff;
 }
 
 
 .btn:hover{
+ transition-duration: 2.5s;
   background-color: var(--Light-Grey);
 }
 
 .btn:active{
+    transition-duration: 0.5s;
     background-color: var(--Orange);
 }
 .row {
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 #sub {
     border: none;
     margin-top: 15px;
-    width: 290px;
+    margin-left: 4px;
+    width: 279px;
     height: 45px;
     background-color: var(--Orange);
     text-transform: uppercase;
@@ -147,6 +151,7 @@ input.btn {
 }
 
 #sub:hover {
+    transition-duration: 1.5s;
     background-color:var(--White);
     color: var(--Orange);
 }
@@ -168,8 +173,8 @@ input.btn {
 
 h3 {
     font-size: 1.5rem;
-    margin-top: -5px;
-    margin-bottom: -10px;
+    margin-top: -7px;
+    margin-bottom: -15px;
 }
 
 @media (min-width: 1440px){
@@ -183,8 +188,8 @@ h3 {
     }
 
     .card {
-        width:  440px;
-        height: 380px;
+        min-width:  416px;
+        max-height: 416px;
         border-radius: 15px;
         padding: 20px;
     }
@@ -192,8 +197,44 @@ h3 {
     .start-block {
         width: 45px;
         height: 45px;
-        margin: 15px 0 25px 0;
+        margin: 15px 0 10px 20px;
     }
+
+    input.btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 25px;
+        margin: -5px 10px 0 10px;
+    }
+
+    #sub {
+        border: none;
+        margin-top: 2px;
+        width: 342px;
+        height: 45px;
+        background-color: var(--Orange);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #fff;
+        border-radius: 25px;
+    }
+    h1 {
+        margin: 15px 0 10px 25px;
+    }
+
+    .text {
+        font-size: 14px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-top: 10px;
+        margin-bottom: 17px;
+    }
+    
+    
+    
 
     
 }

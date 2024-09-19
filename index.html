@@ -12,32 +12,32 @@
 </head>
 <body>
 
-  <main class="container">
+  <main id="container">
+
     <article id="visible" class="card">
-      <div class="start-block">
+      <div id="start-block">
         <img src="images/icon-star.svg" alt="star" title="star-icon">
       </div>
-     <h1>
-        How did we do?
-     </h1>
-     <p class="text">Please let us know how we did with your <br class="break"> support request. All feedback is appreciated <br class="break">  
-  to help us improve our offering!</p>
-     <form>
-        
-           <div class="row">
-            <input id="b1" name="valor1" class="btn" type="button" value="1">
-            <input id="b2" name="valor2" class="btn" type="button" value="2">
-            <input id="b3" name="valor3" class="btn" type="button" value="3">
-            <input id="b4" name="valor4" class="btn" type="button" value="4">
-            <input id="b5" name="valor5" class="btn" type="button" value="5">
-           </div>
-           <input id="sub" type="button" value="submit">   
-     </form>
+      <div id="content">
+        <h1 id="card--title">
+          How did we do?
+       </h1>
+       <p class="text">Please let us know how we did with your <br class="break"> support request. All feedback is appreciated <br class="break">  
+    to help us improve our offering!</p>
+             <div class="row">
+              <button class="btn" value="1">1</button>
+              <button class="btn" value="2">2</button>
+              <button class="btn" value="3">3</button>
+              <button class="btn" value="4">4</button>
+              <button class="btn" value="5">5</button>
+             </div>
+             <button id="sub">submit</button>
+      </div>
     </article>
 
 
     <article id="invisible" class="card card-2 " style="display: none;"> 
-      <div class="thank-you-box">
+      <div id="thank-you-box">
         <img src="images/illustration-thank-you.svg" alt="thanks" title="thank-you-box">
       </div>
       <p id="info-txt">
@@ -51,7 +51,7 @@
 
   
  
- <script src="script/rating.js"></script>
+ <script src="js/rating.js"></script>
     
    
 
